@@ -1,2 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+// ProgramUI ui = new ProgramUI();
+// ui.Run();
+
+FunConsole funUI = new FunConsole();
+ProgramUI_DI progDI = new ProgramUI_DI(funUI);
+progDI.Run();
